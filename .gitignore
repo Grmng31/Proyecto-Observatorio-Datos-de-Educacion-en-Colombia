@@ -16,12 +16,38 @@ env/
 datos/raw/*.csv
 datos/raw/*.xlsx
 datos/raw/*.parquet
-datos/processed/*.csv
+
+# Ignorar todos los parquet en processed (luego se hacen excepciones)
 datos/processed/*.parquet
+
+# Ignorar archivos "limpios" en processed (pesan mucho)
+datos/processed/**/*_limpio.parquet
+datos/processed/**/*_limpio_consolidado.parquet
+
+# Ignorar archivos completos de cruce (excepto si son modelos)
+datos/processed/icfes/cruce_saber_11_pro_completo.parquet
+
+# Ignorar carpetas saber_pro por año (contienen archivos limpios)
+datos/processed/icfes/saber_pro/*/
+
+# Ignorar interim
 datos/interim/
-*.duckdb
-*.sqlite
-*.db
+
+# === EXCEPCIONES: Mantener dimensiones, hechos y modelos ===
+
+# Dimensiones (necesarias para modelos estrella)
+!datos/processed/icfes/dimensiones/*.parquet
+!datos/processed/pte/dimensiones/*.parquet
+!datos/processed/snies/dimensiones/*.parquet
+
+# Hechos (necesarios para modelos estrella)
+!datos/processed/icfes/hechos/*.parquet
+!datos/processed/pte/hechos/*.parquet
+!datos/processed/snies/hechos/*.parquet
+
+# Modelos DuckDB (necesarios para analisis)
+!datos/processed/modelos/*.duckdb
+!datos/processed/modelos/*/*.duckdb
 
 # === Artefactos de modelos ===
 models/*.pkl

@@ -1,0 +1,261 @@
+{
+  "fecha": "2026-04-07T01:05:43.634690",
+  "archivo": "c:\\Users\\German\\Searches\\Proyecto-Observatorio-Datos-de-Educacion-en-Colombia\\datos\\processed\\icfes\\cruce_saber_11_pro_completo.parquet",
+  "registros_iniciales": 1471551,
+  "columnas": [
+    "estu_consecutivo_sb11",
+    "periodo_sb11",
+    "estu_consecutivo_sbpro",
+    "periodo_sbpro",
+    "anio_sb11",
+    "anio_sbpro",
+    "estu_consecutivo_11",
+    "periodo_11",
+    "estu_genero_11",
+    "cole_cod_dane_establecimiento",
+    "cole_nombre_establecimiento",
+    "punt_lenguaje",
+    "punt_matematicas",
+    "punt_ingles",
+    "estu_edad",
+    "estu_fechanacimiento",
+    "estu_depto_presentacion_11",
+    "estu_mcpio_presentacion_11",
+    "cole_cod_depto_ubicacion",
+    "cole_cod_mcpio_ubicacion",
+    "estu_consecutivo_pro",
+    "periodo_pro",
+    "estu_genero_pro",
+    "estu_depto_presentacion_pro",
+    "estu_mcpio_presentacion_pro",
+    "mod_comuni_escrita_punt",
+    "mod_razona_cuantitat_punt",
+    "mod_ingles_punt",
+    "mod_competen_ciudada_punt",
+    "punt_global",
+    "percentil_global"
+  ],
+  "validaciones": {
+    "registros_por_ano": {
+      "2000": 33541,
+      "2001": 34001,
+      "2002": 36575,
+      "2003": 40251,
+      "2004": 25112,
+      "2005": 52845,
+      "2006": 62586,
+      "2007": 76702,
+      "2008": 92634,
+      "2009": 119444,
+      "2010": 167951,
+      "2011": 184062,
+      "2012": 178641,
+      "2013": 196446,
+      "2014": 170760
+    },
+    "nulos": {
+      "estu_genero_11": {
+        "count": 3,
+        "percentage": 0.0
+      },
+      "cole_cod_dane_establecimiento": {
+        "count": 16870,
+        "percentage": 1.15
+      },
+      "cole_nombre_establecimiento": {
+        "count": 11,
+        "percentage": 0.0
+      },
+      "punt_lenguaje": {
+        "count": 160303,
+        "percentage": 10.89
+      },
+      "estu_depto_presentacion_11": {
+        "count": 13237,
+        "percentage": 0.9
+      },
+      "estu_mcpio_presentacion_11": {
+        "count": 13237,
+        "percentage": 0.9
+      },
+      "cole_cod_depto_ubicacion": {
+        "count": 456,
+        "percentage": 0.03
+      },
+      "cole_cod_mcpio_ubicacion": {
+        "count": 456,
+        "percentage": 0.03
+      },
+      "estu_genero_pro": {
+        "count": 3,
+        "percentage": 0.0
+      },
+      "estu_depto_presentacion_pro": {
+        "count": 1033,
+        "percentage": 0.07
+      },
+      "estu_mcpio_presentacion_pro": {
+        "count": 1033,
+        "percentage": 0.07
+      },
+      "mod_comuni_escrita_punt": {
+        "count": 18380,
+        "percentage": 1.25
+      },
+      "mod_ingles_punt": {
+        "count": 446,
+        "percentage": 0.03
+      },
+      "punt_global": {
+        "count": 4,
+        "percentage": 0.0
+      },
+      "percentil_global": {
+        "count": 291788,
+        "percentage": 19.83
+      }
+    },
+    "duplicados": {
+      "antes": 0,
+      "despues": 0
+    },
+    "outliers_puntajes": {
+      "punt_global": {
+        "rango_normal": [
+          40.5,
+          228.5
+        ],
+        "outliers": 291978,
+        "porcentaje": 19.84
+      },
+      "punt_lenguaje": {
+        "rango_normal": [
+          29.69,
+          70.52
+        ],
+        "outliers": 26425,
+        "porcentaje": 1.8
+      },
+      "punt_matematicas": {
+        "rango_normal": [
+          22.0,
+          76.4
+        ],
+        "outliers": 33319,
+        "porcentaje": 2.26
+      },
+      "punt_ingles": {
+        "rango_normal": [
+          23.0,
+          71.0
+        ],
+        "outliers": 95950,
+        "porcentaje": 6.52
+      },
+      "mod_comuni_escrita_punt": {
+        "rango_normal": [
+          -5.0,
+          259.0
+        ],
+        "outliers": 6408,
+        "porcentaje": 0.44
+      },
+      "mod_razona_cuantitat_punt": {
+        "rango_normal": [
+          3.0,
+          259.0
+        ],
+        "outliers": 1709,
+        "porcentaje": 0.12
+      },
+      "mod_ingles_punt": {
+        "rango_normal": [
+          29.0,
+          245.0
+        ],
+        "outliers": 299118,
+        "porcentaje": 20.33
+      },
+      "mod_competen_ciudada_punt": {
+        "rango_normal": [
+          -10.5,
+          265.5
+        ],
+        "outliers": 757,
+        "porcentaje": 0.05
+      }
+    },
+    "top_instituciones": {
+      "INST EDUC CEFA": 4909,
+      "INST EDUC INEM JOSE FELIX DE RESTREPO": 3234,
+      "LIC SALAZAR Y HERRERA": 2967,
+      "COL LA SALLE": 2291,
+      "COLEGIO DE LA UNIVERSIDAD PONTIFICIA BOLIVARIANA": 1924,
+      "COL. MILITAR ALMIRANTE COLON": 1910,
+      "INEM LUIS LOPEZ DE MESA": 1892,
+      "ESCUELA NORMAL SUPERIOR": 1764,
+      "INSTITUTO TECNICO INDUSTRIAL": 1751,
+      "INEM JULIAN MOTTA SALAS": 1632
+    },
+    "estadisticas_puntajes": {
+      "punt_global": {
+        "media": 119.4,
+        "mediana": 138.0,
+        "desviacion": 58.52,
+        "min": 0.0,
+        "max": 272.0
+      },
+      "punt_lenguaje": {
+        "media": 50.32,
+        "mediana": 50.0,
+        "desviacion": 8.25,
+        "min": 0.0,
+        "max": 113.19
+      },
+      "punt_matematicas": {
+        "media": 49.83,
+        "mediana": 49.0,
+        "desviacion": 11.1,
+        "min": 0.0,
+        "max": 127.0
+      },
+      "punt_ingles": {
+        "media": 48.36,
+        "mediana": 45.31,
+        "desviacion": 12.22,
+        "min": -1.0,
+        "max": 117.29
+      },
+      "mod_comuni_escrita_punt": {
+        "media": 116.43,
+        "mediana": 134.0,
+        "desviacion": 63.15,
+        "min": 0.0,
+        "max": 300.0
+      },
+      "mod_razona_cuantitat_punt": {
+        "media": 119.88,
+        "mediana": 136.0,
+        "desviacion": 61.42,
+        "min": 0.0,
+        "max": 300.0
+      },
+      "mod_ingles_punt": {
+        "media": 123.2,
+        "mediana": 138.0,
+        "desviacion": 62.98,
+        "min": 0.0,
+        "max": 300.0
+      },
+      "mod_competen_ciudada_punt": {
+        "media": 117.18,
+        "mediana": 133.0,
+        "desviacion": 60.9,
+        "min": 0.0,
+        "max": 300.0
+      }
+    }
+  },
+  "registros_finales": 1471551,
+  "archivo_limpio": "c:\\Users\\German\\Searches\\Proyecto-Observatorio-Datos-de-Educacion-en-Colombia\\datos\\processed\\icfes\\cruce_saber_11_pro_limpio.parquet"
+}
